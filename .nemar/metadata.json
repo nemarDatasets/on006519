@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on006519",
-  "source": "openneuro",
-  "source_id": "ds006519",
+  "pipeline_stage": "validated",
   "title": "Dataset of intracranial EEG during cortical stimulations evoking negative motor responses",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Andrei Barborica": {},
     "Cristina Ghita": {},
@@ -11,28 +11,69 @@
     "Irina Oane": {},
     "Ioana Mindruta": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006519.v1.0.0",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006519",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006519",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.9.0",
-  "recording_modality": [
-    "anat",
-    "ieeg"
-  ],
-  "datatypes": [
-    "anat",
-    "ieeg"
   ],
   "funding_references": [
     {
-      "funder_name": "Romanian UEFISCDI PN-III-P4-ID-PCE-2020-0935"
+      "funder_name": "Romanian UEFISCDI",
+      "award_number": "PN-III-P4-ID-PCE-2020-0935"
     }
-  ]
+  ],
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "anat",
+    "ieeg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "1.0 GB (123 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".nii",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "description": "This dataset comprises intracranial EEG recordings from 23 patients with drug-resistant epilepsy undergoing stereo-EEG presurgical evaluation. The dataset includes 41 high-frequency stimulation events that evoked negative motor responses, with 24-second iEEG recordings per stimulation event (9-10 seconds pre-stimulation, up to 5 seconds stimulation, and 9-10 seconds post-stimulation). Stimulation parameters, contact pairs, current intensities, and evoked effects are documented in event files, enabling analysis of cortical responses to electrical stimulation.",
+  "methods_description": "High-frequency bipolar intracranial stimulations were delivered using biphasic pulses (1 ms duration) at frequencies of 43.2 Hz (alternating polarity) or 50 Hz (non-alternating), with current intensities ranging from 0.25 to 3 mA for up to 5 seconds. iEEG data were recorded for 24 seconds around each stimulation event, including pre-stimulation baseline (9-10 seconds) and post-stimulation periods (9-10 seconds). Two 5-second epochs (pre- and post-stimulation) were extracted for connectivity analysis.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "electrical stimulation"
+    },
+    {
+      "term": "motor responses"
+    },
+    {
+      "term": "epilepsy surgery"
+    },
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "presurgical evaluation"
+    }
+  ],
+  "source_hash": "90466683d72656c7e8d827b175e272df4ed85bd81987590fbd2eba03d227ee52"
 }
