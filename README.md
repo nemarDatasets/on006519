@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on006519-blue)](https://doi.org/10.82901/nemar.on006519)
+
 In this dataset we included iEEG recordings of responses to 41 intracranial high frequency stimulations evoking 
 negative motor responses, in 23 patients undergoing stereo-EEG presurgical evaluation for drug-resistant epilepsy.
 
