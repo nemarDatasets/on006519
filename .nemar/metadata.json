@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Dataset of intracranial EEG during cortical stimulations evoking negative motor responses",
+  "description": "This dataset comprises intracranial EEG (iEEG) recordings from 23 patients undergoing stereo-EEG presurgical evaluation for drug-resistant epilepsy, capturing 41 instances of high-frequency cortical stimulation that evoked negative motor responses. Each recording includes pre- and post-stimulation epochs used for connectivity analysis, along with detailed stimulation parameters. The dataset supports research into the cortical networks underlying negative motor phenomena elicited by direct electrical stimulation.",
+  "methods_description": "iEEG data were recorded around 41 high-frequency bipolar cortical stimulations (biphasic pulses, 1 ms duration, 43.2 Hz alternating or 50 Hz non-alternating, 0.25-3 mA, up to 5 s) that evoked negative motor responses. Each recording spans 24 seconds, including 9-10 seconds pre- and post-stimulation, with two 5-second epochs (pre- and post-stimulation) used for baseline and connectivity analysis. Stimulation contact pairs, current intensity, and evoked effects are documented in the events files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,6 +13,28 @@
     "Irina Oane": {},
     "Ioana Mindruta": {}
   },
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "cortical stimulation"
+    },
+    {
+      "term": "negative motor response"
+    },
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "connectivity analysis"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006519.v1.0.0",
@@ -35,11 +59,11 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "ieeg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
     "1.0 GB (123 files)"
   ],
@@ -52,28 +76,6 @@
     ".vhdr",
     ".vmrk",
     ".yml"
-  ],
-  "description": "This dataset comprises intracranial EEG recordings from 23 patients with drug-resistant epilepsy undergoing stereo-EEG presurgical evaluation. The dataset includes 41 high-frequency stimulation events that evoked negative motor responses, with 24-second iEEG recordings per stimulation event (9-10 seconds pre-stimulation, up to 5 seconds stimulation, and 9-10 seconds post-stimulation). Stimulation parameters, contact pairs, current intensities, and evoked effects are documented in event files, enabling analysis of cortical responses to electrical stimulation.",
-  "methods_description": "High-frequency bipolar intracranial stimulations were delivered using biphasic pulses (1 ms duration) at frequencies of 43.2 Hz (alternating polarity) or 50 Hz (non-alternating), with current intensities ranging from 0.25 to 3 mA for up to 5 seconds. iEEG data were recorded for 24 seconds around each stimulation event, including pre-stimulation baseline (9-10 seconds) and post-stimulation periods (9-10 seconds). Two 5-second epochs (pre- and post-stimulation) were extracted for connectivity analysis.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "electrical stimulation"
-    },
-    {
-      "term": "motor responses"
-    },
-    {
-      "term": "epilepsy surgery"
-    },
-    {
-      "term": "stereo-EEG"
-    },
-    {
-      "term": "presurgical evaluation"
-    }
   ],
   "source_hash": "90466683d72656c7e8d827b175e272df4ed85bd81987590fbd2eba03d227ee52"
 }
